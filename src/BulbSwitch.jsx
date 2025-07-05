@@ -67,6 +67,10 @@ const SwitchBulb = () => {
         >
           <div className="knob" />
         </div>
+         {/* ON/OFF Button */}
+        <button className="bulb-button" onClick={toggleBulb}>
+          {isOn ? "Turn Off" : "Turn On"}
+        </button>
       </div>
     </div>
   );
