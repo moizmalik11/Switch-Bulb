@@ -8,6 +8,5 @@ import BulbSwitch from './BulbSwitch.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
       <BulbSwitch/>
-   
-  </StrictMode>,
+      </StrictMode>,
 )

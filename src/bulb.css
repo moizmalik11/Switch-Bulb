@@ -68,3 +68,18 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.bulb-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.bulb-button:hover {
+  background-color: #555;
+}

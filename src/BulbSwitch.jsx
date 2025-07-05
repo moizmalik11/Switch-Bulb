@@ -21,15 +21,20 @@ const SwitchBulb = () => {
 
   const handleEnd = () => {
     if (stretch > 30) {
-      setIsOn((prev) => !prev);
+      toggleBulb();
     }
     setStartY(null);
     setStretch(0);
-
-    // Trigger swing
-    setSwing(true);
-    setTimeout(() => setSwing(false), 600); // match animation duration
   };
+
+  const toggleBulb = () => {
+    setIsOn((prev) => !prev);
+
+    // Animate swing
+    setSwing(true);
+    setTimeout(() => setSwing(false), 600);
+  };
+
 
   return (
     <div
@@ -40,6 +45,10 @@ const SwitchBulb = () => {
       onTouchMove={(e) => handleMove(e.touches[0].clientY)}
       onTouchEnd={handleEnd}
     >
+     {/* ON/OFF Button */}
+        <button className="bulb-button" onClick={toggleBulb}>
+          {isOn ? "Turn Off" : "Turn On"}
+        </button>
       <div className="bulb-container">
         {/* Bulb SVG */}
         <svg width="100" height="150" viewBox="0 0 100 150">
@@ -67,10 +76,7 @@ const SwitchBulb = () => {
         >
           <div className="knob" />
         </div>
-         {/* ON/OFF Button */}
-        <button className="bulb-button" onClick={toggleBulb}>
-          {isOn ? "Turn Off" : "Turn On"}
-        </button>
+        
       </div>
     </div>
   );
