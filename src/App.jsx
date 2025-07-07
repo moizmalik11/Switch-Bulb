@@ -6,6 +6,7 @@ import "./Bulb.css";
 function App() {
   const [isOn, setIsOn] = useState(false);
   const [isPulled, setIsPulled] = useState(false);
+  console.log("hello")
 
  
   return (

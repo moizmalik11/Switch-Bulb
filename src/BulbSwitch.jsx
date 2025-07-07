@@ -68,12 +68,14 @@ const SwitchBulb = () => {
         </svg>
 
         {/* Wire with swing animation */}
+
         <div
           className={`wire ${swing ? "swing" : ""}`}
           style={{ height: `${100 + stretch}px` }}
           onMouseDown={(e) => handleStart(e.clientY)}
           onTouchStart={(e) => handleStart(e.touches[0].clientY)}
         >
+        <h2>knot here</h2>
           <div className="knob" />
         </div>
         
