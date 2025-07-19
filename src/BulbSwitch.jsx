@@ -92,7 +92,7 @@ const SwitchBulb = () => {
           📍 Get Location
         </button>
 
-      <div className="bulb-container">
+      <div className="bulb-container" >
         {/* Bulb SVG */}
         <svg width="100" height="150" viewBox="0 0 100 150">
           {/* Bulb Glass */}
@@ -107,10 +107,11 @@ const SwitchBulb = () => {
             }}
           />
           {/* Bulb Base */}
-          <rect x="40" y="80" width="20" height="20" fill="black" />
+          <rect x="40" y="80" width="20" height="130" fill="black" />
         </svg>
 
         {/* Wire with swing animation */}
+        <div className="wire">  </div>
 
         <div
           className={`wire ${swing ? "swing" : ""}`}
@@ -118,7 +119,7 @@ const SwitchBulb = () => {
           onMouseDown={(e) => handleStart(e.clientY)}
           onTouchStart={(e) => handleStart(e.touches[0].clientY)}
         >
-        <h2>knot here</h2>
+        
           <div className="knob" />
         </div>
         
