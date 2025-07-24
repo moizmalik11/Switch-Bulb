@@ -112,13 +112,15 @@ const SwitchBulb = () => {
 
         {/* Wire with swing animation */}
         
+        <div className="wire">  
+          
+          </div>
 
         <div
           className={`wire ${swing ? "swing" : ""}`}
           style={{ height: `${100 + stretch}px` }}
           onMouseDown={(e) => handleStart(e.clientY)}
-          onTouchStart={(e) => handleStart(e.touches[0].clientY)}
-        >
+          onTouchStart={(e) => handleStart(e.touches[0].clientY)}>
         
           <div className="knob" />
         </div>
