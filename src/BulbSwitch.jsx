@@ -112,9 +112,7 @@ const SwitchBulb = () => {
 
         {/* Wire with swing animation */}
         
-        <div className="wire">  
-          
-          </div>
+        
 
         <div
           className={`wire ${swing ? "swing" : ""}`}
