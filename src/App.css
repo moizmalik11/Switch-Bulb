@@ -2,6 +2,17 @@
 body {
   @apply bg-gray-100;
 }   
+.scene {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease;
+  overflow: hidden;
+}
+.scene.light {
+  background: #fff9c4;
+  border: #1e1e1e;
+}
 
 
 .scene.dark {
