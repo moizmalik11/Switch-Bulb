@@ -9,6 +9,16 @@
   overflow: hidden;
 }
 
+.scene.light {
+  background: #fff9c4;
+  border: #1e1e1e;
+}
+
+.scene.dark {
+  background: #1e1e1e;
+}
+
+/* Bulb & Wire Layout */
 .bulb-container {
   display: flex;
   flex-direction: column;
