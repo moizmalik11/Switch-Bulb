@@ -10,3 +10,4 @@ createRoot(document.getElementById('root')).render(
       <BulbSwitch/>
       </StrictMode>,
 )
+console.log("BulbSwitch component rendered successfully.");
